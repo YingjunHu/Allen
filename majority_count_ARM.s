@@ -107,9 +107,15 @@ end:
     @ This handles restoring registers and returning
     pop     {r4-r11, ip, pc}
 
+.endfunc
 
 
 
+
+
+.global count
+.func count, count
+.type count, %function
 
 count:
 	push {r4-r11, ip, lr}
